@@ -5,7 +5,9 @@ function seed() {
 function same([x, y], [j, k]) {
   let cellA = [x, y];
   let cellB = [j, k]
-   return cellA === cellB
+  if(cellA === cellB){
+    return true
+  }
 }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
